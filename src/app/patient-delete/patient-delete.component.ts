@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./patient-delete.component.css']
 })
 export class PatientDeleteComponent {
+  Id =""
+
+  readValue = () =>
+  {
+    let data:any = {"Id":this.Id}
+  }
+
 
 }

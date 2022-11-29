@@ -5,38 +5,38 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <label for="" class="form-label">Patient Name</label>
-                <input type="text" class="form-control">
+                <input name ="Name" [(ngModel)]="Name" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Patient Id</label>
-                <input type="text" class="form-control">
+                <input name ="Id" [(ngModel)]="Id" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Address</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                    <textarea name ="Address" [(ngModel)]="Address" class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
                 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Contact No</label>
-                <input type="text" class="form-control">
+                <input name ="Contact" [(ngModel)]="Contact" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Date Of Appointment</label>
-                <input type="date" class="form-control">
+                <input name ="Date" [(ngModel)]="Date" type="date" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Doctor Name</label>
-                <input type="text" class="form-control">
+                <input name ="Doctor" [(ngModel)]="Doctor" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" >Image Upload</label>
                     <div class="input-group mb-3">
-                        <input type="file" class="form-control" id="inputGroupFile02">
+                        <input name ="Image" [(ngModel)]="Image" type="file" class="form-control" id="inputGroupFile02">
                         <label class="input-group-text" for="inputGroupFile02">Upload</label>
                     </div>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <button class="btn btn-dark">Submit</button>
+                    <button (click)="readValue()" class="btn btn-dark">Submit</button>
                 </div>
             </div>
         </div>
